@@ -10,6 +10,7 @@ There are two programs running:
 
 
 ## Requirements
+- Raspberry Pi or comparable device
 - python3
 - linux distro that uses systemd
 
@@ -20,6 +21,9 @@ There are two programs running:
 
 
 ## Install
+
+0. Connect a simple push button to a GPIO pin
+
 1. Modify `WorkingDirectory` and `ExecStart` inside **both** system services inside `./systemd-services` to match yours paths.
 
 2. Copy both systemd services to your preferred systemd service location (for example: `/etc/systemd/system/`)
