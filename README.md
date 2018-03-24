@@ -11,8 +11,10 @@ There are two programs running:
 
 ## Requirements
 - Raspberry Pi or comparable device
+- speakers
+- Raspbian or other linux distro that uses systemd
 - python3
-- linux distro that uses systemd
+-
 
 ## Customize
 
@@ -22,7 +24,7 @@ There are two programs running:
 
 ## Install
 
-0. Connect a simple push button to a GPIO pin
+0. Connect a simple push button to a GPIO pin and connect your speakers. Make sure that your speakers work when connected to the raspi.
 
 1. Modify `WorkingDirectory` and `ExecStart` inside **both** system services inside `./systemd-services` to match yours paths.
 
