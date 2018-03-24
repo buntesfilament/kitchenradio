@@ -1,0 +1,12 @@
+[Unit]
+Description=Button Interaction with Kitchen Radio
+
+[Service]
+WorkingDirectory=/home/pi
+Type=simple
+ExecStart=/home/pi/radio_gpio.py
+Restart=always
+RestartSec=20s
+
+[Install]
+WantedBy=default.target
