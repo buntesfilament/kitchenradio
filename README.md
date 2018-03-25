@@ -28,9 +28,10 @@ There are two programs running:
 
 1. Modify `WorkingDirectory` and `ExecStart` inside **both** system services inside `./systemd-services` to match yours paths.
 
-2. Copy both systemd services to `/etc/systemd/system/`. (For a general explanation on how to use systemd units, take a look at [this documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-Managing_Services_with_systemd#tabl-Managing_Services_with_systemd-Introduction-Units-Locations))
+2. Copy both systemd services to `/etc/systemd/system/`.
 
-3. Enable the GPIO listening service with: `systemctl enable radio-gpio.service && systemctl start radio-gpio.service`
+3. Enable the GPIO listening service with: `systemctl enable radio-gpio.service && systemctl start radio-gpio.service`.
+(For a general explanation on how to use systemd units, take a look at [this documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/chap-Managing_Services_with_systemd#tabl-Managing_Services_with_systemd-Introduction-Units-Locations))
   
 You only need to enable this one. The other one is handled and toggled by `radio-gpio` on button presses.
 
