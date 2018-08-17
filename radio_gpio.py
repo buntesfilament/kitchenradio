@@ -32,8 +32,9 @@ def getEnabledRadios():
     
 
 def main():
-    MAXRADIOS = 4 #TODO: depend on radios.txt
-    BUTTONPIN = 6 # Modify this variable to match your actual buttons GPIO pin
+    MAXRADIOS = 4
+    with open('radios.txt') as f:
+        MAXRADIOS = sum(1 for _ in f)
     enabledRadios = getEnabledRadios()
     print(enabledRadios)
     # if no radios enabled, enable and start radio@1
@@ -56,10 +57,9 @@ def main():
     def my_callback(channel):
         nonlocal currentRadio
         nonlocal MAXRADIOS
-        nonlocal BUTTONPIN
 
         # When button is down again
-        if GPIO.input(BUTTONPIN) == GPIO.LOW:
+        if GPIO.input(6) == GPIO.LOW:
             prevRadio = currentRadio
             currentRadio = currentRadio = max(1, (currentRadio + 1) % (MAXRADIOS + 1));
             print(currentRadio)
