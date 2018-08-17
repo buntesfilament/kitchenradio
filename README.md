@@ -14,7 +14,7 @@ There are two programs running:
 - speakers
 - Raspbian or other linux distro that uses systemd
 - python3
--
+- mpv
 
 ## Customize
 
