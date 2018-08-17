@@ -1,3 +1,4 @@
 http://fluxfm.hoerradar.de/fluxfmberlin-live-mp3-hq?sABC=59q8o786%230%23523o3q1p3s767475p391s995p3599s9n%23gharva&amsparams=playerid:tunein;skey:1507374982
 http://stream.100p.nl/100pctnl.mp3
-http://live-radio01.mediahubaustralia.com/JAZW/mp3
+http://live-radio02.mediahubaustralia.com/JAZW/mp3
+http://mfm1.webradiostreaming.de:8250
